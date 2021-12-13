@@ -52,8 +52,8 @@ An updated version of \code{recipe} with the new step added to the
 sequence of existing steps (if any).
 }
 \description{
-The functions \code{step_mas()} create \emph{specifications} of recipe steps that
-will create binary variables from set-valued attributes.
+The functions \code{step_mas()} create \emph{specifications} of recipe
+steps that will create binary variables from set-valued attributes.
 }
 \details{
 \code{step_mas()} will construct a collection of binary variables that

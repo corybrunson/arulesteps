@@ -1,8 +1,8 @@
-#' Transform set-valued variables to logical membership variables
+#' @title Transform set-valued variables to logical membership variables
 #'
-#' The functions `step_mas()` create _specifications_ of recipe steps that
-#' will create binary variables from set-valued attributes.
-#'
+#' @description The functions `step_mas()` create _specifications_ of recipe
+#'   steps that will create binary variables from set-valued attributes.
+#' 
 #' @details `step_mas()` will construct a collection of binary variables that
 #'   encode maximal itemsets from within a set-valued attribute using the MAS
 #'   (Maximal-frequent All-confident pattern Selection) algorithm of Zhong &al
