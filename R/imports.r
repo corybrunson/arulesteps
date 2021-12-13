@@ -1,2 +1,4 @@
 #' @import recipes
-#' @import arules
+#' @import Matrix
+#' @importClassesFrom arules transactions itemMatrix
+#' @importFrom arules items

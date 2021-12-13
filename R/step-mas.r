@@ -10,11 +10,6 @@
 
 #' @template ref-zhong2020
 
-#' @import recipes
-#' @import Matrix
-#' @importClassesFrom arules transactions itemMatrix
-#' @importFrom arules items
-
 #' @param recipe A recipe object. The step will be added to the sequence of
 #'   operations for this recipe.
 #' @param ... One or more selector functions to choose which variables are
@@ -126,7 +121,8 @@ prep.step_mas <- function(x, training, info = NULL, ...) {
     # find frequent itemsets
     its <- arules::eclat(
       tas,
-      parameter = list(support = x$min_support, maxlen = x$max_len)
+      parameter = list(support = x$min_support, maxlen = x$max_len),
+      control = list(verbose = FALSE)
     )
     # restrict to maximal itemsets
     its <- subset(its, arules::is.maximal(its))
