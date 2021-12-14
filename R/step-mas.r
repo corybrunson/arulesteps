@@ -10,6 +10,11 @@
 
 #' @template ref-zhong2020
 
+#' @import recipes
+#' @import Matrix
+#' @importClassesFrom arules transactions itemMatrix
+#' @importFrom arules items
+
 #' @param recipe A recipe object. The step will be added to the sequence of
 #'   operations for this recipe.
 #' @param ... One or more selector functions to choose which variables are
